@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styless.css" type="text/css">
+    <title>Final Project (About)</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo-text">
+                    <h1>Allied Aerial Operations in World War II</h1>
+                </div> <!-- Logo Text -->
+            </div> <!-- Logo -->
+            <div id="menubar">
+                <ul id="menu">
+                    <li><a href="index.html">Introduction</a></li>
+                    <li><a href="geography.html">Geography</a></li>
+                    <li><a href="aircrafts.html">Aircrafts</a></li>
+                    <li><a href="datestime.html">Time Series</a></li>
+                    <li><a href="targets.html">Targets</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Axis Powers
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="Germany.html">Germany</a>
+                          <a href="Italy.html">Italy</a>
+                          <a href="Japan.html">Japan</a>
+                        </div>
+                    </div>
+                    <li class="selected"><a href="about.html">About</a></li>
+                </ul>
+            </div> <!-- Menu Bar -->
+        </div> <!-- Header -->
+
+        <div id='introduction'>
+            <h2>About</h2>
+        </div> <!-- Introduction -->
+
+        <div id="introduction-text">
+            <h2>Data</h2>
+            <p>
+                The dataset used for this project was retrieved in June 2020 from <a href="https://www.kaggle.com/usaf/world-war-ii">Kaggle.com</a>. The dataset comes from THOR an historical data collection project developed 
+                by Air Force Lt. Col. Robertson and released to the public by the Department of Defense in 2012. I tried to locate the original source of the data, but the
+                <a href="http://afri.au.af.mil/thor/">webpage</a> of the Air Force Research Institute where the original database was allegedly released is not working properly
+                as of June 2020. The data, however, can be found on many different online war and historical blogs as well as on data science online communities such as Kaggle
+                and data.world. 
+            </p>
+            <h2>Methodology and Data Cleaning</h2>
+            <p>
+                The dataset was downoladed in CSV format and it was cleaned and processed using Python and Excel. The original dataset has over 178k rows and 62 columns; however, 
+                as it contains many missing values, the number of columns was cut to 21 columns. In some cases, the missing values were replaced with 0s, as the missing values do 
+                not indicate missing values per se but indicate that a specific type of aircraft, or bomb, were not used for the operation. In many other cases the missing values do 
+                indicate real missing values, which are often displayed as 'Not Recorded' in the visualizations. The aircrafts' specifications information was collected into a CSV 
+                file manually. The CSV file was then merged with the main dataset. 
+            </p>
+        </div> <!-- About Text-->
+        <div id="about_author">
+            <h3>About the Author</h3>
+            <p>Andrea Piolini is a student in the Data Science program at The George Washington University, in Washington, DC. Andrea holds an MA in Security Studies from Georgetown University and a BA in International Relations from the University of Milan, in Milan, Italy.
+            </p>
+            <img src="css/pics/linkedin_pic.jpg" alt="Picture of Andrea Piolini" width="200" height="200">
+        </div>
+
+        <div id="content-footer">
+            <div id="footer">
+                Copyright &copy;
+                <script>
+                    var d = new Date();
+                    document.write(d.getFullYear());
+                </script>
+                | <a href="https://www.linkedin.com/in/andrea-piolini/">Andrea Piolini</a>
+            </div> <!-- Footer -->
+        </div> <!-- Content Footer-->
+    </div> <!-- Main -->
+    
+</body>
+</html>
